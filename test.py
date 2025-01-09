@@ -18,7 +18,7 @@ def home ():
 @app.route("/contact", methods=['GET','POST'])
 def contact():
    data={}
-   if request.method='POST':
-       data=request.form
-   return render_template("contact.html",data=data)    
-
+   if request.method =='POST': 
+        data=request.form
+        return render_template('contact.html',data=data)    
+   
